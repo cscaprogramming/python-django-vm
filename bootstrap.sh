@@ -7,6 +7,10 @@ echo 'Installing pip3'
 
 sudo apt-get -y install python3-pip
 
+echo 'Installing postgresql'
+
+sudo apt-get -y install postgresql libpq-dev postgresql-client postgresql-client-common
+
 echo 'install django'
 
 sudo pip3 install django
@@ -39,4 +43,6 @@ fi
 cd mysite
 
 echo "applying migrations"
-#python3 manage.py migrate
+python3 manage.py migrate
+
+echo "complete"
