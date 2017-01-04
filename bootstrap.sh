@@ -42,7 +42,7 @@ else
 #      pip freeze -r $PROJECTS_DIR/$PROJECT_NAME/requirements.txt > $PROJECTS_DIR/$PROJECT_NAME/requirements.txt
 #    fi
   echo 'Done.'
-fii
+fi
 
 cd mysite
 
