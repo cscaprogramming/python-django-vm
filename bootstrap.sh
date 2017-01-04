@@ -2,6 +2,10 @@
 
 PROJECT_NAME="mysite"
 
+apt-get update
+apt-get install -y apache2
+
+
 # Install Python 3
 echo 'Installing pip3'
 
@@ -15,7 +19,7 @@ echo 'install django'
 
 sudo pip3 install django
 
-cd /vagrant/src
+ cd /vagrant/src
 
 # Django project test and init
 
@@ -38,7 +42,7 @@ else
 #      pip freeze -r $PROJECTS_DIR/$PROJECT_NAME/requirements.txt > $PROJECTS_DIR/$PROJECT_NAME/requirements.txt
 #    fi
   echo 'Done.'
-fi
+fii
 
 cd mysite
 
